@@ -24,6 +24,7 @@ class MenuCharacter extends FlxSprite
 	private static var settings:Map<String, CharacterSetting> = [
 		'bf' => new CharacterSetting(0, -20, 1.0, true),
 		'gf' => new CharacterSetting(50, 80, 1.5, true),
+		'shura' => new CharacterSetting(-15, 130),
 		'dad' => new CharacterSetting(-15, 130),
 		'spooky' => new CharacterSetting(20, 30),
 		'pico' => new CharacterSetting(0, 0, 1.0, true),
@@ -46,6 +47,7 @@ class MenuCharacter extends FlxSprite
 		animation.addByPrefix('bf', "BF idle dance white", 24);
 		animation.addByPrefix('bfConfirm', 'BF HEY!!', 24, false);
 		animation.addByPrefix('gf', "GF Dancing Beat WHITE", 24);
+		animation.addByPrefix('shura', "Shura Idle DANCE", 24);
 		animation.addByPrefix('dad', "Dad idle dance BLACK LINE", 24);
 		animation.addByPrefix('spooky', "spooky dance idle BLACK LINES", 24);
 		animation.addByPrefix('pico', "Pico Idle Dance", 24);

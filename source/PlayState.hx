@@ -2259,6 +2259,8 @@ class PlayState extends MusicBeatState
 							if (SONG.notes[Math.floor(curStep / 16)].altAnim)
 								altAnim = '-alt';
 						}
+						if (daNote.noteType == 4)
+							altAnim = '-alt';
 	
 						switch (Math.abs(daNote.noteData))
 						{
