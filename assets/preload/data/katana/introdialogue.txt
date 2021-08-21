@@ -1,0 +1,40 @@
+:showbackgroundimage:cutscene2
+:bf:SHURI: Haah... Haah...
+:bf:BOYFRIEND: dude wtf you just tried to kill us
+:bf:SHURI: Trespassers! Who are you, and how did you get in here?!
+:bf:BOYFRIEND: beep bop doo skebop
+:bf:GIRLFRIEND: Yeah, we don't mean any harm, we're really sorry...
+:bf:SHURI: If you don't leave now, you WILL be!
+:bf:BOYFRIEND: bro imma just thrash yo ass again lol
+:bf:GIRLFRIEND: Yeah, you look tired, ma'am... are you sure this is a good idea?
+:bf:SHURI: Shut it, trespassers! 
+:bf:SHURI: State your business!
+:bf:GIRLFRIEND: Please, calm down, we were just looking for a place to stay the night!
+:bf:SHURI: Your REAL business! Are you here to assassinate us?
+:bf:BOYFRIEND: calm yo tits jfc
+:bf:GIRLFRIEND: BOYFRIEND NO DON'T PISS HER OFF MORE
+:bf:SHURI: Fine, then! You two have left me no choice.
+:showbackgroundimage:cutscene3
+:bf:SHURI: ...
+:showbackgroundimage:cutscene4
+:bf:SHURI: KENNNNNNNNN!!!!
+:showbackgroundimage:cutscene5
+:bf:KEN: It's okay, Shuri. I'm here now. Are you okay?
+:bf:SHURI: I tried to take care of them myself, but they defended against my every blow...
+:bf:KEN: Shuri, it's alright. Calm down.
+:bf:SHURI: I'm sorry you always have to clean up my messes...
+:bf:KEN: It's not your "mess," Shuri. You have no control whether or not we must defend our home against intruders.
+:hidebackground:
+:gf-scared:W-wait, we’re not intruders or anything, we promise! We just--
+:ken-aggressive:Save your excuses for the gates of Heaven. On the honor of our clan we must defend the secrecy of our hideaway.
+:bf-default:bruh literally your doors were wide open lmao
+:ken-tired:...
+:shuri-surprised:...
+:ken-closedeyes:Alright. Whoever left those gates ajar is getting a stern talking-to.
+:ken-aggressive:After I deal with these intruders, of course. Shuri, get behind me. You did the best you could. I’ll finish the job.
+:shuri-love:Ken...
+:ken-closedeyes:You two. I don't know what your business is or who you work for.
+:ken-aggressive:But I will give you one last chance to leave this place and forget what you saw here.
+:bf-default:beep
+:ken-aggressive:Fine. Know, then, that you have been warned. In service of our clan, I, Ken Tsukimori, will cut you down.
+:gf-scared:She’s not backing down, babe. That sword looks pretty sharp… be careful, okay?

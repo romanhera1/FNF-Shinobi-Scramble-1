@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="portrait.png"><SubTexture name="aggressive0000" x="0" y="0" width="435" height="404" frameX="0" frameY="0" frameWidth="435" frameHeight="404" />
+<SubTexture name="closedeyes0000" x="435" y="0" width="435" height="404" frameX="0" frameY="0" frameWidth="435" frameHeight="404" />
+<SubTexture name="happy0000" x="870" y="0" width="435" height="404" frameX="0" frameY="0" frameWidth="435" frameHeight="404" />
+<SubTexture name="laugh0000" x="1305" y="0" width="435" height="404" frameX="0" frameY="0" frameWidth="435" frameHeight="404" />
+<SubTexture name="love0000" x="0" y="404" width="435" height="404" frameX="0" frameY="0" frameWidth="435" frameHeight="404" />
+<SubTexture name="neutral0000" x="435" y="404" width="435" height="404" frameX="0" frameY="0" frameWidth="435" frameHeight="404" />
+<SubTexture name="surprised0000" x="870" y="404" width="435" height="404" frameX="0" frameY="0" frameWidth="435" frameHeight="404" />
+<SubTexture name="tired0000" x="1305" y="404" width="435" height="404" frameX="0" frameY="0" frameWidth="435" frameHeight="404" />
+</TextureAtlas>

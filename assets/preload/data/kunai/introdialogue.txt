@@ -1,0 +1,8 @@
+:showbackgroundimage:cutscene1
+:bf-default:BEEP
+:gf-default:Why is it raining!
+:hidebackground:
+:bf-default:damn son it do be training
+:gf-default:yea
+:shuri-happy:look at this dwarf
+:ken-neutral:ha midget

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="portrait.png">
+
+<SubTexture name="happy0000" x="0" y="0" width="329" height="250" frameX="0" frameY="0" frameWidth="329" frameHeight="250" />
+<SubTexture name="nervous0000" x="329" y="0" width="329" height="250" frameX="0" frameY="0" frameWidth="329" frameHeight="250" />
+<SubTexture name="default0000" x="658" y="0" width="329" height="250" frameX="0" frameY="0" frameWidth="329" frameHeight="250" />
+<SubTexture name="scared0000" x="987" y="0" width="329" height="250" frameX="0" frameY="0" frameWidth="329" frameHeight="250" />
+<SubTexture name="sad0000" x="0" y="250" width="329" height="250" frameX="0" frameY="0" frameWidth="329" frameHeight="250" />
+<SubTexture name="terror0000" x="329" y="250" width="329" height="250" frameX="0" frameY="0" frameWidth="329" frameHeight="250" />
+</TextureAtlas>

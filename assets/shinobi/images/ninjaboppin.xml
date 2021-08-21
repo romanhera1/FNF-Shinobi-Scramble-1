@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ninjaboppin.png"><SubTexture name="ninjaboppin idle0000" x="0" y="0" width="264" height="454" frameX="0" frameY="0" frameWidth="264" frameHeight="454" />
+<SubTexture name="ninjaboppin idle0001" x="264" y="0" width="264" height="454" frameX="0" frameY="0" frameWidth="264" frameHeight="454" />
+<SubTexture name="ninjaboppin idle0002" x="528" y="0" width="264" height="454" frameX="0" frameY="0" frameWidth="264" frameHeight="454" />
+<SubTexture name="ninjaboppin idle0003" x="792" y="0" width="264" height="454" frameX="0" frameY="0" frameWidth="264" frameHeight="454" />
+</TextureAtlas>

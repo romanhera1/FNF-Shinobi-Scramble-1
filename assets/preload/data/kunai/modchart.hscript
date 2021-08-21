@@ -1,0 +1,80 @@
+function start(song) {
+dad.y = 2000;
+boyfriend.followCamX = -300;
+boyfriend.followCamY = -100;
+FlxG.camera.zoom = 0.9;
+}
+
+
+function beatHit(beat)
+{
+
+}
+
+function update(elapsed)
+{
+
+}
+
+function stepHit(step)
+{
+if (curStep > 26)
+{dad.y = 90;}
+if (curStep > 28)
+{boyfriend.followCamX = 50;
+boyfriend.followCamY = 0;}
+}
+
+function playerTwoTurn()
+{
+	setDefaultZoom(0.7);
+}
+
+function playerTwoMiss()
+{
+}
+
+function playerTwoSing()
+{
+
+}
+
+function playerOneTurn()
+{
+}
+
+function playerOneMiss()
+{
+}
+
+function playerOneSing()
+{
+if (curStep > 26 && curStep < 36)        
+{boyfriend.playAnim("dodge");
+        gf.playAnim("scared");}
+else
+if (curStep > 283 && curStep < 286)        
+{boyfriend.playAnim("dodge");
+        gf.playAnim("scared");}
+else
+if (curStep > 538 && curStep < 545)        
+{boyfriend.playAnim("dodge");
+        gf.playAnim("scared");}
+else
+if (curStep > 863 && curStep < 897)        
+{boyfriend.playAnim("dodge");
+        gf.playAnim("scared");}
+else
+if (curStep > 928 && curStep < 987)        
+{boyfriend.playAnim("dodge");
+        gf.playAnim("scared");}
+else
+if (curStep > 1014 && curStep < 1032)        
+{boyfriend.playAnim("dodge");
+        gf.playAnim("scared");}
+}
+function noteHit(player1,star)
+{ 
+        boyfriend.playAnim("dodge");
+        gf.playAnim("scared");
+}

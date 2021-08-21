@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="portrait.png"><SubTexture name="aggressive0000" x="0" y="0" width="404" height="367" frameX="0" frameY="0" frameWidth="404" frameHeight="367" />
+<SubTexture name="sobbing0000" x="404" y="0" width="404" height="367" frameX="0" frameY="0" frameWidth="404" frameHeight="367" />
+<SubTexture name="embarrassed0000" x="808" y="0" width="404" height="367" frameX="0" frameY="0" frameWidth="404" frameHeight="367" />
+<SubTexture name="happy0000" x="1212" y="0" width="404" height="367" frameX="0" frameY="0" frameWidth="404" frameHeight="367" />
+<SubTexture name="hurt0000" x="0" y="367" width="404" height="367" frameX="0" frameY="0" frameWidth="404" frameHeight="367" />
+<SubTexture name="love0000" x="404" y="367" width="404" height="367" frameX="0" frameY="0" frameWidth="404" frameHeight="367" />
+<SubTexture name="surprised0000" x="808" y="367" width="404" height="367" frameX="0" frameY="0" frameWidth="404" frameHeight="367" />
+</TextureAtlas>

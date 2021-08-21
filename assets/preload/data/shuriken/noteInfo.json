@@ -1,0 +1,54 @@
+[
+    {
+
+        "animNames": [
+            "purple star", // left note
+            "blue star", // down note
+            "green star", // up note
+            "red star" // right note
+        ],
+
+        "animInt": [
+            32,
+            33,
+            34,
+            35
+         ],
+	"healCutoff":shit,
+        "healAmount": 0.05,
+
+        "damageAmount": -1.1,
+
+	
+        
+	"id":[star]
+
+    }
+
+
+    {
+
+        "animNames": [
+            "sword left", // left note
+            "sword down", // down note
+            "sword up", // up note
+            "sword right" // right note
+        ],
+
+        "animInt": [
+            32,
+            33,
+            34,
+            35
+         ],
+	"healCutoff":shit,
+        "healAmount": 0.05,
+
+        "damageAmount": -2,
+
+	
+        
+	"id":[sword]
+
+    }
+]

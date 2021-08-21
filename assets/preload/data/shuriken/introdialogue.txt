@@ -1,0 +1,52 @@
+:shuri-surprised:Ken! Are you alright?
+:ken-tired:Ugh... you've parried my every blow. Who are you? And what is your purpose here? Come to wipe out our clan like the others, have you…?
+:gf-scared:No, no, no! Would you just listen for, like, literally two seconds!!!
+:gf-terror:And put the freaking sword away!
+:bf-worried:beepbo bop beep!!!
+:gf-nervous:We have no idea what you’re talking about with “wiping out clans” or whatever.
+:gf-sad:We got lost in the woods, it was raining out, and we missed the last train...
+:gf-nervous:...so we ducked into the first building we saw to stay dry and see if we could book a room!
+:ken-surprised:Book... a room?
+:gf-sad:Okay full disclosure we thought this was one of those like, Japanese-retro-style hotels or whatever and not an actual ninja hideaway
+:bf-default:beep
+:gf-nervous:You said it. Talk about a misunderstanding.
+:ken-closedeyes:...Pfft.
+:shuri-happy:Heheh...
+:ken-laugh:Hahaha! You… You thought our… our ancestral home...
+:ken-laugh:...was a HOTEL?!?!
+:shuri-embarrassed:I guess that’s what we get for leaving the gate open like that.
+:ken-closedeyes:Again, someone's getting reprimanded for that.
+:gf-nervous:Wait. You really believe us? Just like that?
+:shuri-embarrassed:Well, you’re clearly not assassins. You don’t look or act the part.
+:shuri-happy:You carry yourselves like random folks who just wandered into somewhere they shouldn’t have been.
+:ken-closedeyes:...Admittedly I did notice you two were on the defensive the entire time.
+:ken-closedeyes:I have faced countless opponents, struck down many targets. I know what eyes of killing intent look like.
+:ken-happy:I do not see that in yours.
+:bf-default:beep bop skedoop bop
+:gf-default:You said it. Guess that's why I'm the talker.
+:ken-neutral:It's just with how... things... have been recently. We're a little on edge.
+:shuri-embarrassed:Sorry for…  you know. Trying to kill you on sight. We jumped the gun there.
+:bf-default:nah fam our b for comin in uninvited lmao who does that
+:ken-closedeyes:I'll tell you what.
+:ken-neutral:Our hideaway is one of our clan’s closest-guarded secrets. First, do you give us your word not to spread this knowledge around?
+:bf-relaxed:boopity boop
+:shuri-embarrassed:Yeah, he’s right, we really need to shut those gates.
+:ken-closedeyes:In a bit, Shuri.
+:ken-happy:But as long as we have your word, then we will cut a deal with you.
+:ken-neutral:You’ve proven yourselves strong enough to face us individually. Earn our respect in battle against both of us,
+:ken-neutral:and we will allow you to take shelter here tonight, and anytime you wish.
+:gf-nervous:No killing us in the night or whatever?
+:ken-happy:You gave me your word. I give you ours.
+:ken-aggressive:Though be warned, we will not hold back in our duel; you have proven yourself more than capable of keeping our blades at bay.
+:gf-nervous:e
+:shuri-hurt:Ken, is that a good idea? Letting outsiders into our hideaway?
+:ken-closedeyes:They're victims of an unfortunate circumstance. The least we can do is have a little heart.
+:gf-default:What do you think, babe?
+:bf-relaxed:beep bop (confident)
+:gf-happy:Yeah, you tell ‘em! With the power of our love, nothing can stop us!
+:shuri-love:“Power of love…” Aww, they’re so cute!! You’re making me regret trying to kill you on sight.
+:shuri-embarrassed:...I mean, I already do.
+:shuri-love:But like, even more since you guys are so ADORABLE!!!
+:ken-closedeyes:Focus, Shuri.
+:ken-happy:You two say you have the power of love on your side… then this will be an interesting battle. For you see…
+:ken-love:...So do we!
