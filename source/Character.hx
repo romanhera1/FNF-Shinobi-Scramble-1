@@ -118,6 +118,8 @@ class Character extends FlxSprite
 
 				animation.addByPrefix('dodge', 'boyfriend dodge',24, false);
     			animation.addByPrefix('attack', 'boyfriend attack',24, false);
+				animation.addByPrefix('hurt', 'BF hit',24, false);
+
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
@@ -134,6 +136,7 @@ class Character extends FlxSprite
 				addOffset("singLEFTmiss", 12, 24);
 				addOffset("singDOWNmiss", -11, -19);
 				addOffset('dodge', -5);
+				addOffset('hurt', -5);
   			    addOffset('attack', 225,275);
 				addOffset("hey", 7, 4);
 				addOffset('firstDeath', 37, 11);

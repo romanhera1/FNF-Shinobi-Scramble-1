@@ -3060,7 +3060,9 @@ class PlayState extends MusicBeatState
 				
 				if (boyfriend.holdTimer > Conductor.stepCrochet * 4 * 0.001 && (!holdArray.contains(true) || PlayStateChangeables.botPlay))
 				{
-					if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss') || !boyfriend.animation.curAnim.name.startsWith("attack") || !boyfriend.animation.curAnim.name.startsWith("dodge"))
+					//if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss') || !boyfriend.animation.curAnim.name.startsWith("attack") || !boyfriend.animation.curAnim.name.startsWith("dodge"))
+					//	boyfriend.playAnim('idle');
+					if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss') && (boyfriend.animation.curAnim.curFrame >= 10 || boyfriend.animation.curAnim.finished))
 						boyfriend.playAnim('idle');
 				}
 		 
@@ -3394,6 +3396,8 @@ class PlayState extends MusicBeatState
 						case 2:
 							switch (note.noteType)
 								{
+									case 1:
+										boyfriend.playAnim('hurt', true);
 									case 2:
 										boyfriend.playAnim('dodge', true);
 									case 3:
@@ -3409,6 +3413,8 @@ class PlayState extends MusicBeatState
 						case 3:
 							switch (note.noteType)
 								{
+									case 1:
+										boyfriend.playAnim('hurt', true);
 									case 2:
 										boyfriend.playAnim('dodge', true);
 									case 3:
@@ -3424,6 +3430,8 @@ class PlayState extends MusicBeatState
 						case 1:
 							switch (note.noteType)
 								{
+									case 1:
+										boyfriend.playAnim('hurt', true);
 									case 2:
 										boyfriend.playAnim('dodge', true);
 									case 3:
@@ -3439,6 +3447,8 @@ class PlayState extends MusicBeatState
 						case 0:
 							switch (note.noteType)
 								{
+									case 1:
+										boyfriend.playAnim('hurt', true);
 									case 2:
 										boyfriend.playAnim('dodge', true);
 									case 3:
@@ -3669,7 +3679,7 @@ class PlayState extends MusicBeatState
 			// Dad doesnt interupt his own notes
 			if (SONG.notes[Math.floor(curStep / 16)].mustHitSection && dad.curCharacter != 'gf')
 				{
-					if (dad.animation.curAnim.name == 'attack' && dad.animation.curAnim.finished)
+					if (!dad.animation.curAnim.name.startsWith('attack') && dad.animation.curAnim.finished)
 						{
 							dad.dance();
 						}
@@ -3706,7 +3716,7 @@ class PlayState extends MusicBeatState
 			gf.dance();
 		}
 
-		if (!boyfriend.animation.curAnim.name.startsWith("sing") || !boyfriend.animation.curAnim.name.startsWith("attack") || !boyfriend.animation.curAnim.name.startsWith("dodge"))
+		if (!boyfriend.animation.curAnim.name.startsWith("sing") && boyfriend.animation.curAnim.finished || !boyfriend.animation.curAnim.name.startsWith("attack") && boyfriend.animation.curAnim.finished || !boyfriend.animation.curAnim.name.startsWith("dodge") && boyfriend.animation.curAnim.finished || !boyfriend.animation.curAnim.name.startsWith("hurt") && boyfriend.animation.curAnim.finished)
 		{
 			boyfriend.playAnim('idle');
 		}
