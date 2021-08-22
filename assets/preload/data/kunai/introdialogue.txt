@@ -1,8 +1,20 @@
 :showbackgroundimage:cutscene1
-:bf-default:BEEP
-:gf-default:Why is it raining!
+:hideleft:
+:gf-scared:BOOM!
+:gf-scared:Come on! We have to find somewhere to dry off!
+:bf-default:beepbop beepboopbop
+:gf-scared:Hey, look! There's a building over there! Hurry!
 :hidebackground:
-:bf-default:damn son it do be training
-:gf-default:yea
-:shuri-happy:look at this dwarf
-:ken-neutral:ha midget
+:gf-default:Phew. We're out of the rain.
+:bf-default:Beep boop skebop do bap
+:gf-nervous:I know, but at this rate, we won't make it to the station in time to board the last train.
+:bf-default:Boopity doop skoobity bop
+:gf-default:Yeah, lucky we found a hotel here...
+:gf-nervous:Though I didn’t see anything about one in the travel brochure.
+:bf-relaxed:bap bop beep skoobidee boop
+:gf-default:You’re right. Let’s see if we can book a room. Then... we can have some fun.
+:bf-relaxed:beepity boopity bap
+:gf-happy:Of course I brought an extra controller!
+:gf-nervous:...
+:gf-nervous:...Hold that thought, babe. Something's not right here. Get your mic, would you?
+:bf-default:beepbo

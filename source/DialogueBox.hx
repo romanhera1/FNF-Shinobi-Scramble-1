@@ -649,6 +649,12 @@ class DialogueBox extends FlxSpriteGroup
 								bgbox.visible = false;
 								enddialogue();
 								backgroundImage.visible = false;
+							case 'hideleft':
+								portraitLeft.visible = false;
+								enddialogue();
+							case 'hideright':
+								portraitRight.visible = false;
+								enddialogue();
 						}
 					}
 			}
