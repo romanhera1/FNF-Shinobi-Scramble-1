@@ -972,7 +972,7 @@ class PlayState extends MusicBeatState
 		generateStaticArrows(0);
 		generateStaticArrows(1);
 
-
+		issongfinished = false;
 		#if windows
 		// pre lowercasing the song name (startCountdown)
 		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
@@ -2426,6 +2426,7 @@ class PlayState extends MusicBeatState
 
 	function endSong():Void
 	{
+		issongfinished = true;
 		FlxG.stage.removeEventListener(KeyboardEvent.KEY_DOWN,handleInput);
 		if (useVideo)
 			{
@@ -2588,6 +2589,8 @@ class PlayState extends MusicBeatState
 
 
 	var endingSong:Bool = false;
+
+	var issongfinished:Bool = true;
 
 	var hits:Array<Float> = [];
 	var offsetTest:Float = 0;
@@ -3612,7 +3615,7 @@ class PlayState extends MusicBeatState
 			resyncVocals();
 		}
 
-		if (SONG.song.toLowerCase() == 'kunai')
+		if (SONG.song.toLowerCase() == 'kunai' && issongfinished == false)
 			{
 				switch (curStep)
 				{
