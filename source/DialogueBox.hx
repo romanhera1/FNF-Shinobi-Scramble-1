@@ -261,8 +261,9 @@ class DialogueBox extends FlxSpriteGroup
 			}
 		}
 
-		if (PlayerSettings.player1.controls.PAUSE && dialogueStarted == true)
+		if (FlxG.keys.justPressed.ESCAPE)
 			{
+				dialogueStarted = false;
 				endinstantly();
 			}
 		
