@@ -2379,8 +2379,13 @@ class PlayState extends MusicBeatState
 								{
 									switch (daNote.noteType)
 											{
-												case 2 | 3:
-													health -= 100;
+												case 3:
+													health -= .25;
+													vocals.volume = 0;
+													if (theFunne)
+														noteMiss(daNote.noteData, daNote);
+												case 2:
+													health -= .5;
 													vocals.volume = 0;
 													if (theFunne)
 														noteMiss(daNote.noteData, daNote);
@@ -2664,7 +2669,7 @@ class PlayState extends MusicBeatState
 										if (FlxG.save.data.accuracyMod == 0)
 											totalNotesHit += 1;
 										sicks++;
-			}
+								}
 						}
 				}
 
@@ -3049,27 +3054,36 @@ class PlayState extends MusicBeatState
 						PlayStateChangeables.botPlay && daNote.tooLate && daNote.mustPress)
 						{
 							if(loadRep)
-							{
-								//trace('ReplayNote ' + tmpRepNote.strumtime + ' | ' + tmpRepNote.direction);
-								var n = findByTime(daNote.strumTime);
-								trace(n);
-								if(n != null)
 								{
-									goodNoteHit(daNote);
-									boyfriend.holdTimer = daNote.sustainLength;
+									//trace('ReplayNote ' + tmpRepNote.strumtime + ' | ' + tmpRepNote.direction);
+									if(rep.replay.songNotes.contains(HelperFunctions.truncateFloat(daNote.strumTime, 2)))
+									{
+										if (daNote.noteType == 1)
+											{
+											}
+										else
+											{
+												goodNoteHit(daNote);
+												boyfriend.holdTimer = daNote.sustainLength;
+											}
+										
+									}
+								}else {
+									if (daNote.noteType == 1)
+										{
+										}
+									else
+										{
+											goodNoteHit(daNote);
+											boyfriend.holdTimer = daNote.sustainLength;
+										}
 								}
-							}else {
-								goodNoteHit(daNote);
-								boyfriend.holdTimer = daNote.sustainLength;
-							}
 						}
 					}
 				});
 				
 				if (boyfriend.holdTimer > Conductor.stepCrochet * 4 * 0.001 && (!holdArray.contains(true) || PlayStateChangeables.botPlay))
 				{
-					//if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss') || !boyfriend.animation.curAnim.name.startsWith("attack") || !boyfriend.animation.curAnim.name.startsWith("dodge"))
-					//	boyfriend.playAnim('idle');
 					if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss') && (boyfriend.animation.curAnim.curFrame >= 10 || boyfriend.animation.curAnim.finished))
 						boyfriend.playAnim('idle');
 				}
@@ -3687,7 +3701,7 @@ class PlayState extends MusicBeatState
 			// Dad doesnt interupt his own notes
 			if (SONG.notes[Math.floor(curStep / 16)].mustHitSection && dad.curCharacter != 'gf')
 				{
-					if (!dad.animation.curAnim.name.startsWith('attack') && dad.animation.curAnim.finished)
+					if (!dad.animation.curAnim.name.startsWith('attack') && dad.animation.curAnim.finished || !dad.animation.curAnim.name.startsWith('sing') && dad.animation.curAnim.finished)
 						{
 							dad.dance();
 						}
@@ -3729,7 +3743,11 @@ class PlayState extends MusicBeatState
 			boyfriend.playAnim('idle');
 		}
 		
-
+		if (!dad.animation.curAnim.name.startsWith('attack') && dad.animation.curAnim.finished || !dad.animation.curAnim.name.startsWith('sing') && dad.animation.curAnim.finished)
+		{
+			dad.dance();
+		}
+		
 		if (curBeat % 8 == 7 && curSong == 'Bopeebo')
 		{
 			boyfriend.playAnim('hey', true);
