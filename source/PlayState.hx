@@ -3425,9 +3425,9 @@ class PlayState extends MusicBeatState
 									case 3:
 										if (SONG.song.toLowerCase() == 'katana')
 											{
-												FlxG.sound.play(Paths.sound('Sword'), 1, false);
 												dad.playAnim('attack');
 											}
+										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
 										boyfriend.playAnim('singUP', true);
@@ -3442,9 +3442,9 @@ class PlayState extends MusicBeatState
 									case 3:
 										if (SONG.song.toLowerCase() == 'katana')
 											{
-												FlxG.sound.play(Paths.sound('Sword'), 1, false);
 												dad.playAnim('attack');
 											}
+										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
 										boyfriend.playAnim('singRIGHT', true);
@@ -3459,9 +3459,9 @@ class PlayState extends MusicBeatState
 									case 3:
 										if (SONG.song.toLowerCase() == 'katana')
 											{
-												FlxG.sound.play(Paths.sound('Sword'), 1, false);
 												dad.playAnim('attack');
 											}
+										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
 										boyfriend.playAnim('singDOWN', true);
@@ -3476,9 +3476,9 @@ class PlayState extends MusicBeatState
 									case 3:
 										if (SONG.song.toLowerCase() == 'katana')
 											{
-												FlxG.sound.play(Paths.sound('Sword'), 1, false);
 												dad.playAnim('attack');
 											}
+										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
 										boyfriend.playAnim('singLEFT', true);

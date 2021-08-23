@@ -29,7 +29,7 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
-	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options'];
+	var optionShit:Array<String> = ['story mode', 'freeplay', 'extras', 'options'];
 	#else
 	var optionShit:Array<String> = ['story mode', 'freeplay'];
 	#end
@@ -182,7 +182,7 @@ class MainMenuState extends MusicBeatState
 			{
 				if (optionShit[curSelected] == 'donate')
 				{
-					fancyOpenURL("https://ninja-muffin24.itch.io/funkin");
+					//fancyOpenURL("https://ninja-muffin24.itch.io/funkin");
 				}
 				else
 				{
@@ -247,6 +247,10 @@ class MainMenuState extends MusicBeatState
 				FlxG.switchState(new FreeplayState());
 
 				trace("Freeplay Menu Selected");
+			case 'extras':
+				FlxG.switchState(new FreeplayState());
+
+				trace("Extra Menu Selected");
 
 			case 'options':
 				FlxG.switchState(new OptionsMenu());
