@@ -206,7 +206,8 @@ class DialogueBox extends FlxSpriteGroup
 
 		skipText = new FlxText(5, 695, 640, "Press ESCAPE to skip the dialogue.\n", 40);
 		skipText.scrollFactor.set(0, 0);
-		skipText.setFormat(Paths.font("VCR OSD Mono"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		skipText.font = 'VCR OSD Mono';
+		skipText.setFormat(20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		skipText.borderSize = 2;
 		skipText.borderQuality = 1;
 		add(skipText);
