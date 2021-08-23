@@ -17,6 +17,8 @@ class DialogueBox extends FlxSpriteGroup
 	var box:FlxSprite;
 	var bgbox:FlxSprite;
 
+	var skipText:FlxText;
+
 	var curCharacter:String = '';
 
 	var dialogue:Alphabet;
@@ -202,6 +204,13 @@ class DialogueBox extends FlxSpriteGroup
 		bgbox.screenCenter(X);
 		bgbox.visible = false;
 
+		skipText = new FlxText(5, 695, 640, "Press ESCAPE to skip the dialogue.\n", 40);
+		skipText.scrollFactor.set(0, 0);
+		skipText.setFormat(Paths.font("VCR OSD Mono"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		skipText.borderSize = 2;
+		skipText.borderQuality = 1;
+		add(skipText);
+
 		switch (PlayState.SONG.noteStyle)
 			{
 				case 'pixel':
@@ -323,6 +332,7 @@ class DialogueBox extends FlxSpriteGroup
 	
 						new FlxTimer().start(0.2, function(tmr:FlxTimer)
 						{
+							skipText.alpha -= 1 / 5;
 							box.alpha -= 1 / 5;
 							bgFade.alpha -= 1 / 5 * 0.7;
 							portraitLeft.visible = false;

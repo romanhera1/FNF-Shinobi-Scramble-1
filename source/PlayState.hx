@@ -2357,12 +2357,12 @@ class PlayState extends MusicBeatState
 										switch (daNote.noteType)
 											{
 												case 3:
-													health -= .25;
+													health -= .5;
 													vocals.volume = 0;
 													if (theFunne)
 														noteMiss(daNote.noteData, daNote);
 												case 2:
-													health -= .5;
+													health -= 1;
 													vocals.volume = 0;
 													if (theFunne)
 														noteMiss(daNote.noteData, daNote);
@@ -2380,12 +2380,12 @@ class PlayState extends MusicBeatState
 									switch (daNote.noteType)
 											{
 												case 3:
-													health -= .25;
+													health -= .5;
 													vocals.volume = 0;
 													if (theFunne)
 														noteMiss(daNote.noteData, daNote);
 												case 2:
-													health -= .5;
+													health -= 1;
 													vocals.volume = 0;
 													if (theFunne)
 														noteMiss(daNote.noteData, daNote);
@@ -3056,27 +3056,15 @@ class PlayState extends MusicBeatState
 							if(loadRep)
 								{
 									//trace('ReplayNote ' + tmpRepNote.strumtime + ' | ' + tmpRepNote.direction);
-									if(rep.replay.songNotes.contains(HelperFunctions.truncateFloat(daNote.strumTime, 2)))
+									if(rep.replay.songNotes.contains(HelperFunctions.truncateFloat(daNote.strumTime, 2)) && daNote.noteType != 1)
 									{
-										if (daNote.noteType == 1)
-											{
-											}
-										else
-											{
-												goodNoteHit(daNote);
-												boyfriend.holdTimer = daNote.sustainLength;
-											}
+										goodNoteHit(daNote);
+										boyfriend.holdTimer = daNote.sustainLength;
 										
 									}
 								}else {
-									if (daNote.noteType == 1)
-										{
-										}
-									else
-										{
-											goodNoteHit(daNote);
-											boyfriend.holdTimer = daNote.sustainLength;
-										}
+									goodNoteHit(daNote);
+									boyfriend.holdTimer = daNote.sustainLength;
 								}
 						}
 					}
@@ -3253,17 +3241,28 @@ class PlayState extends MusicBeatState
 			// FlxG.sound.play(Paths.sound('missnote1'), 1, false);
 			// FlxG.log.add('played imss note');
 
-			switch (direction)
-			{
-				case 0:
-					boyfriend.playAnim('singLEFTmiss', true);
-				case 1:
-					boyfriend.playAnim('singDOWNmiss', true);
-				case 2:
-					boyfriend.playAnim('singUPmiss', true);
-				case 3:
-					boyfriend.playAnim('singRIGHTmiss', true);
-			}
+			switch (daNote.noteType)
+						{
+							case 2 | 3:
+								switch (direction)
+									{
+										case 0 | 1 | 2 | 3:
+											boyfriend.playAnim('hit', true);
+									}			
+							default:
+								switch (direction)
+									{
+										case 0:
+											boyfriend.playAnim('singLEFTmiss', true);
+										case 1:
+											boyfriend.playAnim('singDOWNmiss', true);
+										case 2:
+											boyfriend.playAnim('singUPmiss', true);
+										case 3:
+											boyfriend.playAnim('singRIGHTmiss', true);
+									}
+						}
+			
 
 			#if windows
 			if (luaModchart != null)
