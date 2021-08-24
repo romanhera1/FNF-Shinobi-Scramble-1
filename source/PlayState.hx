@@ -3709,6 +3709,13 @@ class PlayState extends MusicBeatState
 				dad.playAnim('danceRight');
 		}
 
+		if ((curSong == 'shuriken' || curSong == 'otousan-no-tatakai') && dad.curCharacter == 'shuriken') {
+			if (curBeat % 2 == 1 && dad.animOffsets.exists('danceLeft'))
+				dad.playAnim('danceLeft');
+			if (curBeat % 2 == 0 && dad.animOffsets.exists('danceRight'))
+				dad.playAnim('danceRight');
+		}
+
 		if (SONG.notes[Math.floor(curStep / 16)] != null)
 		{
 			if (SONG.notes[Math.floor(curStep / 16)].changeBPM)
