@@ -12,6 +12,8 @@ class GameOverSubstate extends MusicBeatSubstate
 	var bf:Boyfriend;
 	var camFollow:FlxObject;
 
+	public static var diedtokunai:Bool = false;
+	public static var diedtosword:Bool = false;
 	var stageSuffix:String = "";
 
 	public function new(x:Float, y:Float)
@@ -25,6 +27,14 @@ class GameOverSubstate extends MusicBeatSubstate
 				daBf = 'bf-pixel-dead';
 			default:
 				daBf = 'bf';
+				if (diedtosword == true)
+					{
+						daBf = 'bf_death_katana';
+					}
+				if (diedtokunai == true)
+					{
+						daBf = 'bf_death_kunai';
+					}			
 		}
 
 		super();
@@ -97,6 +107,8 @@ class GameOverSubstate extends MusicBeatSubstate
 	{
 		if (!isEnding)
 		{
+			diedtokunai = false;
+			diedtosword = false;
 			isEnding = true;
 			bf.playAnim('deathConfirm', true);
 			FlxG.sound.music.stop();

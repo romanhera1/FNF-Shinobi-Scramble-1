@@ -149,7 +149,40 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				flipX = true;
+			
+			case 'bf_death_kunai':
+				var tex = Paths.getSparrowAtlas('characters/SS_Boyfriend_Die', 'shared');
+				frames = tex;
 
+				trace(tex.frames.length);
+				animation.addByPrefix('firstDeath', "Bf gets nutted by a kunai", 24, false);
+				animation.addByPrefix('deathLoop', "BF kunai death loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF kunai dead confirm", 24, false);
+
+				addOffset('firstDeath', 37, 11);
+				addOffset('deathLoop', 37, 5);
+				addOffset('deathConfirm', 37, 69);
+
+				playAnim('idle');
+
+				flipX = true;
+			
+			case 'bf_death_katana':
+				var tex = Paths.getSparrowAtlas('characters/SS_Boyfriend_Die', 'shared');
+				frames = tex;
+
+				trace(tex.frames.length);
+				animation.addByPrefix('firstDeath', "BF cut in half0", 24, false);
+				animation.addByPrefix('deathLoop', "BF cut in half loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF cut in half confirm", 24, false);
+
+				addOffset('firstDeath', 37, 11);
+				addOffset('deathLoop', 37, 5);
+				addOffset('deathConfirm', 37, 69);
+
+				playAnim('idle');
+
+				flipX = true;
 			case 'shuri':
 				var tex = Paths.getSparrowAtlas('characters/shuri', 'shared');
 				frames = tex;

@@ -226,13 +226,25 @@ class Note extends FlxSprite
 				{
 					case 1:
 						{
-							if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * .3) && strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * .2))
-								canBeHit = true;
-							else
-								canBeHit = false;
-
-							if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset * Conductor.timeScale && !wasGoodHit)
-								tooLate = true;
+							// ass
+							if (isSustainNote)
+								{
+									if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * .05)
+										&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.05))
+										canBeHit = true;
+									else
+										canBeHit = false;
+								}
+								else
+								{
+									if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * .3) && strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * .2))
+										canBeHit = true;
+									else
+										canBeHit = false;
+								}
+					
+								if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset * Conductor.timeScale && !wasGoodHit)
+									tooLate = true;
 						}
 					default:
 						{

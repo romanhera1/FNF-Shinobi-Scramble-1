@@ -2106,6 +2106,8 @@ class PlayState extends MusicBeatState
 
 		if (health <= 0)
 		{
+			trace(GameOverSubstate.diedtokunai + 'kunai');
+			trace(GameOverSubstate.diedtosword + 'katana');
 			boyfriend.stunned = true;
 
 			persistentUpdate = false;
@@ -2124,6 +2126,14 @@ class PlayState extends MusicBeatState
 
 			// FlxG.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
 		}
+		if (health >= 0)
+			{
+				#if debug
+				trace('BEIN RESET');
+				#end
+			//	GameOverSubstate.diedtosword = false;
+			//	GameOverSubstate.diedtokunai = false;
+			}
  		if (FlxG.save.data.resetButton)
 		{
 			if(FlxG.keys.justPressed.R)
@@ -2357,11 +2367,15 @@ class PlayState extends MusicBeatState
 										switch (daNote.noteType)
 											{
 												case 3:
+													trace('SWORD');
+													GameOverSubstate.diedtosword = true;
 													health -= .5;
 													vocals.volume = 0;
 													if (theFunne)
 														noteMiss(daNote.noteData, daNote);
 												case 2:
+													trace('KUNAI');
+													GameOverSubstate.diedtokunai = true;
 													health -= 1;
 													vocals.volume = 0;
 													if (theFunne)
@@ -2380,16 +2394,20 @@ class PlayState extends MusicBeatState
 									switch (daNote.noteType)
 											{
 												case 3:
-													health -= .5;
-													vocals.volume = 0;
-													if (theFunne)
-														noteMiss(daNote.noteData, daNote);
-												case 2:
-													health -= 1;
-													vocals.volume = 0;
-													if (theFunne)
-														noteMiss(daNote.noteData, daNote);
-												case 1:
+												trace('SWORD');
+												GameOverSubstate.diedtosword = true;
+												health -= .5;
+												vocals.volume = 0;
+												if (theFunne)
+													noteMiss(daNote.noteData, daNote);
+											case 2:
+												trace('KUNAI');
+												GameOverSubstate.diedtokunai = true;
+												health -= 1;
+												vocals.volume = 0;
+												if (theFunne)
+													noteMiss(daNote.noteData, daNote);
+											case 1:
 												default:
 													health -= 0.075;
 													vocals.volume = 0;
@@ -2595,6 +2613,9 @@ class PlayState extends MusicBeatState
 
 	var endingSong:Bool = false;
 
+	var lastkunai:Bool = false;
+	var lastsword:Bool = false;
+
 	var issongfinished:Bool = true;
 
 	var hits:Array<Float> = [];
@@ -2616,7 +2637,6 @@ class PlayState extends MusicBeatState
 			coolText.x = FlxG.width * 0.55;
 			coolText.y -= 350;
 			coolText.cameras = [camHUD];
-			//
 	
 			var rating:FlxSprite = new FlxSprite();
 			var score:Float = 350;
@@ -2631,6 +2651,8 @@ class PlayState extends MusicBeatState
 						switch(daRating)
 							{
 								case 'shit' | 'bad' | 'good' | 'sick':
+									vocals.volume = 0;
+									FlxG.sound.play(Paths.sound('boyfriend_yelp'), 0.7, false);
 									health -= .25;
 							}
 					default:
