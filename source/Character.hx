@@ -227,8 +227,9 @@ class Character extends FlxSprite
 			case 'shuriken':
 				var tex = Paths.getSparrowAtlas('characters/shuriken', 'shared');
 				frames = tex;
-				animation.addByIndices('danceLeft', 'shuriken idle', [0,1,2,3,4,5,6,7,8,9,10], "", 24, false);
-				animation.addByIndices('danceRight', 'shuriken idle', [11,12,13,14,15,16,17,18,19,20], "", 24, false);
+				animation.addByPrefix('idle', 'shuriken idle', 24, false);
+				//animation.addByIndices('danceLeft', 'shuriken idle', [0,1,2,3,4,5,6,7,8,9,10], "", 24, false);
+				//animation.addByIndices('danceRight', 'shuriken idle', [11,12,13,14,15,16,17,18,19,20], "", 24, false);
 				animation.addByPrefix('singDOWN', 'shuriken down', 24, false);
 				animation.addByPrefix('singUP', 'shuriken up', 24, false);
 				animation.addByPrefix('singLEFT','shuriken left', 24, false);
@@ -251,7 +252,8 @@ class Character extends FlxSprite
 				addOffset('singLEFT-alt', 0, 0);
 				addOffset('singRIGHT-alt', 0, 0);
 
-				playAnim('danceRight');
+				//playAnim('danceRight');
+				playAnim('idle');
 
 		}
 
@@ -332,15 +334,7 @@ class Character extends FlxSprite
 						else
 							playAnim('danceLeft');
 					}
-
-				case 'shuriken':
-					danced = !danced;
-
-					if (danced)
-						playAnim('danceRight');
-					else
-						playAnim('danceLeft');
-					
+				//case 'spooky' || 'shuriken':
 				case 'spooky':
 					danced = !danced;
 
