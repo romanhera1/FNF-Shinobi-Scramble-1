@@ -318,14 +318,14 @@ class TitleState extends MusicBeatState
 				
 				http.onData = function (data:String)
 				{
-						FlxG.switchState(new GalleryMenuState()); // fail but we go anyway
-						//FlxG.switchState(new MainMenuState());
+						//FlxG.switchState(new GalleryMenuState()); // fail but we go anyway
+						FlxG.switchState(new MainMenuState());
 				}
 				
 				http.onError = function (error) {
 				  trace('error: $error');
-				  FlxG.switchState(new GalleryMenuState()); // fail but we go anyway
-				  //FlxG.switchState(new MainMenuState()); // fail but we go anyway
+				  //FlxG.switchState(new GalleryMenuState()); // fail but we go anyway
+				  FlxG.switchState(new MainMenuState()); // fail but we go anyway
 				}
 				
 				http.request();
