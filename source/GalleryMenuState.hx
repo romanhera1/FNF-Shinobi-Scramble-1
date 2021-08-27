@@ -90,7 +90,7 @@ class GalleryMenuState extends MusicBeatState
 		credit1 = new FlxSprite().loadGraphic(Paths.image('extras/1-2-1 update', 'shared'));
 		credit1.scrollFactor.x = 0;
 		credit1.scrollFactor.y = 0.10;
-		credit1.setGraphicSize(Std.int(credit1.width * .4));
+		credit1.setGraphicSize(Std.int(credit1.width * .5));
 		credit1.updateHitbox();
 		credit1.screenCenter();
 		credit1.visible = true;
@@ -200,7 +200,7 @@ class GalleryMenuState extends MusicBeatState
 		credit12 = new FlxSprite().loadGraphic(Paths.image('extras/shuri_ken_juno', 'shared'));
 		credit12.scrollFactor.x = 0;
 		credit12.scrollFactor.y = 0.10;
-		credit12.setGraphicSize(Std.int(credit12.width * .2));
+		credit12.setGraphicSize(Std.int(credit12.width * .3));
 		credit12.updateHitbox();
 		credit12.screenCenter();
 		credit12.visible = false;
