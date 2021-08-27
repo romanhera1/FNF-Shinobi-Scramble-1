@@ -227,7 +227,6 @@ class Character extends FlxSprite
 			case 'shuriken':
 				var tex = Paths.getSparrowAtlas('characters/shuriken', 'shared');
 				frames = tex;
-				//animation.addByPrefix('idle', 'shuriken idle', 24, false);
 				animation.addByIndices('danceLeft', 'shuriken idle', [0,2,4,6,8,10], "", 12, false);
 				animation.addByIndices('danceRight', 'shuriken idle', [11,13,15,17,19], "", 12, false);
 				animation.addByPrefix('singDOWN', 'shuriken down', 24, false);
@@ -253,7 +252,6 @@ class Character extends FlxSprite
 				addOffset('singRIGHT-alt', 0, 0);
 
 				playAnim('danceRight');
-				//playAnim('idle');
 
 		}
 
@@ -335,7 +333,6 @@ class Character extends FlxSprite
 							playAnim('danceLeft');
 					}
 				case 'spooky' | 'shuriken':
-				//case 'spooky':
 					danced = !danced;
 
 					if (danced)

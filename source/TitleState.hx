@@ -166,9 +166,6 @@ class TitleState extends MusicBeatState
 		persistentUpdate = true;
 
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
-		// bg.antialiasing = true;
-		// bg.setGraphicSize(Std.int(bg.width * 0.6));
-		// bg.updateHitbox();
 		add(bg);
 
 		if(Main.watermarks) {
@@ -321,12 +318,14 @@ class TitleState extends MusicBeatState
 				
 				http.onData = function (data:String)
 				{
-						FlxG.switchState(new MainMenuState());
+						FlxG.switchState(new GalleryMenuState()); // fail but we go anyway
+						//FlxG.switchState(new MainMenuState());
 				}
 				
 				http.onError = function (error) {
 				  trace('error: $error');
-				  FlxG.switchState(new MainMenuState()); // fail but we go anyway
+				  FlxG.switchState(new GalleryMenuState()); // fail but we go anyway
+				  //FlxG.switchState(new MainMenuState()); // fail but we go anyway
 				}
 				
 				http.request();
@@ -389,7 +388,7 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 1:
-				createCoolText(['Juno']);
+				createCoolText(['Juno Songs']);
 			// credTextShit.visible = true;
 			case 3:
 				addMoreText('present');

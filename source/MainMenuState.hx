@@ -61,7 +61,7 @@ class MainMenuState extends MusicBeatState
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('menuBG'));
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
 		bg.scrollFactor.x = 0;
 		bg.scrollFactor.y = 0.10;
 		bg.setGraphicSize(Std.int(bg.width * 1.1));
@@ -248,7 +248,7 @@ class MainMenuState extends MusicBeatState
 
 				trace("Freeplay Menu Selected");
 			case 'extras':
-				FlxG.switchState(new FreeplayState());
+				FlxG.switchState(new ExtraMenuState());
 
 				trace("Extra Menu Selected");
 

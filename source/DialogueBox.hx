@@ -333,6 +333,7 @@ class DialogueBox extends FlxSpriteGroup
 	
 						new FlxTimer().start(0.2, function(tmr:FlxTimer)
 						{
+							FlxG.sound.music.fadeOut(2.2, 0);
 							skipText.alpha -= 1 / 5;
 							box.alpha -= 1 / 5;
 							bgFade.alpha -= 1 / 5 * 0.7;
@@ -654,6 +655,10 @@ class DialogueBox extends FlxSpriteGroup
 								backgroundImage.loadGraphic(Paths.image('dialogue/' + dialogueList[0], 'shared'));
 								enddialogue();
 								backgroundImage.visible = true;
+							case 'playmusic':
+								FlxG.sound.playMusic(Paths.music(dialogueList[0], 'shared'));
+							case 'stopmusic':
+								FlxG.sound.music.stop();
 							case 'hidebackground':
 								dropText.color = 0xFFD89494;
 								swagDialogue.color = 0xFF3F2021;

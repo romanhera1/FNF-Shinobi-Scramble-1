@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="icons.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="icon_fnfdev" x="10" y="10" width="600" height="600"/>
+	<SubTexture name="icon_jorge" x="620" y="10" width="600" height="600"/>
+	<SubTexture name="icon_juno" x="1230" y="10" width="600" height="600"/>
+	<SubTexture name="icon_kade" x="10" y="620" width="600" height="600"/>
+	<SubTexture name="icon_moddingplus" x="620" y="620" width="600" height="600"/>
+</TextureAtlas>
