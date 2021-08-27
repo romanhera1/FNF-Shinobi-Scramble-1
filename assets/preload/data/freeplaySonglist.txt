@@ -3,3 +3,4 @@ Kunai:shuri:1
 Katana:ken:1
 Shuriken:shuriken:1
 Otousan-no-Tatakai:shuriken:1
+Iyada:ken:1

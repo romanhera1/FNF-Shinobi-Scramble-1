@@ -1,4 +1,3 @@
-:playmusic:Hideaway
 :showbackgroundimage:cutscene1
 :hideleft:
 :gf-scared:BOOM!
@@ -6,6 +5,7 @@
 :bf-default:beepbop beepboopbop
 :gf-scared:Hey, look! There's a building over there! Hurry!
 :hidebackground:
+:playmusic:Hideaway
 :gf-default:Phew. We're out of the rain.
 :bf-default:Beep boop skebop do bap
 :gf-nervous:I know, but at this rate, we won't make it to the station in time to board the last train.
@@ -16,6 +16,7 @@
 :gf-default:You’re right. Let’s see if we can book a room. Then... we can have some fun.
 :bf-relaxed:beepity boopity bap
 :gf-happy:Of course I brought an extra controller!
+:stopmusic:
 :gf-nervous:...
 :gf-nervous:...Hold that thought, babe. Something's not right here. Get your mic, would you?
 :bf-default:beepbo

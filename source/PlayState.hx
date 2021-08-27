@@ -2108,6 +2108,7 @@ class PlayState extends MusicBeatState
 		{
 			trace(GameOverSubstate.diedtokunai + 'kunai');
 			trace(GameOverSubstate.diedtosword + 'katana');
+			trace(GameOverSubstate.diedtosword + 'iyada');
 			boyfriend.stunned = true;
 
 			persistentUpdate = false;
@@ -3444,7 +3445,7 @@ class PlayState extends MusicBeatState
 									case 2:
 										boyfriend.playAnim('dodge', true);
 									case 3:
-										if (SONG.song.toLowerCase() == 'katana')
+										if (SONG.song.toLowerCase() == 'katana' || SONG.song.toLowerCase() == 'iyada')
 											{
 												dad.playAnim('attack');
 											}
@@ -3461,14 +3462,14 @@ class PlayState extends MusicBeatState
 									case 2:
 										boyfriend.playAnim('dodge', true);
 									case 3:
-										if (SONG.song.toLowerCase() == 'katana')
+										if (SONG.song.toLowerCase() == 'katana' || SONG.song.toLowerCase() == 'iyada')
 											{
 												dad.playAnim('attack');
 											}
 										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
-										boyfriend.playAnim('singRIGHT', true);
+										boyfriend.playAnim('singUP', true);
 								}
 						case 1:
 							switch (note.noteType)
@@ -3478,14 +3479,14 @@ class PlayState extends MusicBeatState
 									case 2:
 										boyfriend.playAnim('dodge', true);
 									case 3:
-										if (SONG.song.toLowerCase() == 'katana')
+										if (SONG.song.toLowerCase() == 'katana' || SONG.song.toLowerCase() == 'iyada')
 											{
 												dad.playAnim('attack');
 											}
 										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
-										boyfriend.playAnim('singDOWN', true);
+										boyfriend.playAnim('singUP', true);
 								}
 						case 0:
 							switch (note.noteType)
@@ -3495,14 +3496,14 @@ class PlayState extends MusicBeatState
 									case 2:
 										boyfriend.playAnim('dodge', true);
 									case 3:
-										if (SONG.song.toLowerCase() == 'katana')
+										if (SONG.song.toLowerCase() == 'katana' || SONG.song.toLowerCase() == 'iyada')
 											{
 												dad.playAnim('attack');
 											}
 										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
-										boyfriend.playAnim('singLEFT', true);
+										boyfriend.playAnim('singUP', true);
 								}
 					}
 		
