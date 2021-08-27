@@ -3469,7 +3469,7 @@ class PlayState extends MusicBeatState
 										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
-										boyfriend.playAnim('singUP', true);
+										boyfriend.playAnim('singRIGHT', true);
 								}
 						case 1:
 							switch (note.noteType)
@@ -3486,7 +3486,7 @@ class PlayState extends MusicBeatState
 										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
-										boyfriend.playAnim('singUP', true);
+										boyfriend.playAnim('singDOWN', true);
 								}
 						case 0:
 							switch (note.noteType)
@@ -3503,7 +3503,7 @@ class PlayState extends MusicBeatState
 										FlxG.sound.play(Paths.sound('Sword'), 1, false);
 										boyfriend.playAnim('attack', true);
 									default:
-										boyfriend.playAnim('singUP', true);
+										boyfriend.playAnim('singLEFT', true);
 								}
 					}
 		
