@@ -1,4 +1,5 @@
 :showbackgroundimage:cutscene2
+:playmusic:Hideaway
 :bf:SHURI: Haah... Haah...
 :bf:BOYFRIEND: dude wtf you just tried to kill us
 :bf:SHURI: Trespassers! Who are you, and how did you get in here?!

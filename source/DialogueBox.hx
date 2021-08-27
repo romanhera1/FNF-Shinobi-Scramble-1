@@ -657,8 +657,10 @@ class DialogueBox extends FlxSpriteGroup
 								backgroundImage.visible = true;
 							case 'playmusic':
 								FlxG.sound.playMusic(Paths.music(dialogueList[0], 'shared'));
+								enddialogue();
 							case 'stopmusic':
 								FlxG.sound.music.stop();
+								enddialogue();
 							case 'hidebackground':
 								dropText.color = 0xFFD89494;
 								swagDialogue.color = 0xFF3F2021;

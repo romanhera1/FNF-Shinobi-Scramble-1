@@ -5,6 +5,7 @@
 :bf-default:beepbop beepboopbop
 :gf-scared:Hey, look! There's a building over there! Hurry!
 :hidebackground:
+:playmusic:Hideaway
 :gf-default:Phew. We're out of the rain.
 :bf-default:Beep boop skebop do bap
 :gf-nervous:I know, but at this rate, we won't make it to the station in time to board the last train.
