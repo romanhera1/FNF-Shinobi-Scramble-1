@@ -2132,8 +2132,8 @@ class PlayState extends MusicBeatState
 				#if debug
 				trace('BEIN RESET');
 				#end
-			//	GameOverSubstate.diedtosword = false;
-			//	GameOverSubstate.diedtokunai = false;
+				GameOverSubstate.diedtosword = false;
+				GameOverSubstate.diedtokunai = false;
 			}
  		if (FlxG.save.data.resetButton)
 		{

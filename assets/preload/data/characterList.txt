@@ -4,3 +4,5 @@ gf
 shuri
 ken
 shuri-ken
+kusari
+youngkusari
